@@ -41,3 +41,13 @@ variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"]
 }
+
+#route53 variables
+
+variable "zoneid" {
+    default = "Z0159192O3E0AXOYYIF9"
+}
+
+variable "domain_name" {
+    default = "daws9.online"
+}

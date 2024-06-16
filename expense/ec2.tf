@@ -24,7 +24,7 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
-resource "aws_instance" "db" {
+resource "aws_instance" "expense" {
   count = length(var.instance_names)
   ami                     = var.image_id
   tags = merge(
